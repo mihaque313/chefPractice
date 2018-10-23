@@ -11,7 +11,7 @@ if platform?('windows')
     only_if { node['flash']['ie'] && !Flash::IE.flash_preinstalled?(node) }
   end
 
-  powershell_script 'Flash is pre-installed but not enabled on Windows Server 2012' do
+  powershell_script 'Flash is pre-installed but not enabled' do
     code <<-EOH
       import-module ServerManager
       Add-WindowsFeature -name Desktop-Experience,qWave -IncludeAllSubFeature -IncludeManagementTools
