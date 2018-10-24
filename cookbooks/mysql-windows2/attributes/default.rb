@@ -1,0 +1,27 @@
+# passwords
+default['mysql']['server_root_password'] = 'replace_me'
+
+# port
+default['mysql']['port'] = '3306'
+
+# version
+default['mysql']['msi_version'] = '5.7.17.0'
+default['mysql']['mysql_version'] = '5.7.17'
+default['mysql']['checksum'] = "d4a5dd9b7887d587fc6003025563810dbb6d277b555af615070f68a3a96a29a0"
+default['mysql']['workbench_version'] = '6.3.8'
+
+ 
+
+# Source URL of Mysql Server
+default['mysql']['windows']['url'] = "https://cdn.mysql.com//Downloads/MySQLInstaller/mysql-installer-community-#{node['mysql']['msi_version']}.msi"
+
+default['mysql']['windows']['dir'] = "C:/Program Files (x86)/MySQL/MySQL Installer for Windows"
+
+# MySQL Instance Configuration
+
+#default['mysql']['windows']['AddBinToPath'] = 'no' # accepted values {yes | no}
+default['mysql']['windows']['ServerType'] = 'DEVELOPER' # accepted values {DEVELOPMENT | SERVER | DEDICATED}
+#default['mysql']['windows']['DatabaseType'] = 'MIXED' # accepted values {MIXED | INNODB | MYISAM}
+#default['mysql']['windows']['ConnectionUsage'] = 'DSS' # accepted values {DSS | OLTP}
+#default['mysql']['windows']['SkipNetworking'] = 'yes' # accepted values {yes | no}. Specifying yes disables network access altogether
+#default['mysql']['windows']['StrictMode'] = 'yes' # accepted values {yes | no}

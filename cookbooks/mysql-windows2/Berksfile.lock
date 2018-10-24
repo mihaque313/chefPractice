@@ -1,0 +1,7 @@
+DEPENDENCIES
+  mysql-windows2
+    path: .
+    metadata: true
+
+GRAPH
+  mysql-windows2 (0.1.0)
