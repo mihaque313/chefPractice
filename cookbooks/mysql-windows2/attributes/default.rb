@@ -7,7 +7,7 @@ default['mysql']['port'] = '3306'
 # version
 default['mysql']['msi_version'] = '8.0.13.0'
 default['mysql']['mysql_version'] = '8.0.13'
-default['mysql']['checksum'] = "d4a5dd9b7887d587fc6003025563810dbb6d277b555af615070f68a3a96a29a0"
+default['mysql']['checksum'] = "4ffa5a022d4aa3995d2a33118b2c32cc"
 default['mysql']['workbench_version'] = '6.3.8'
 
 
