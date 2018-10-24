@@ -11,7 +11,8 @@
    "override_attributes": {
    },
    "chef_type": "role",
-   "run_list": ["recipe[win-installations]" ],
+   "run_list": ["recipe[win-installations::default]"
+   ],
    "env_run_lists": {
    }
 }
