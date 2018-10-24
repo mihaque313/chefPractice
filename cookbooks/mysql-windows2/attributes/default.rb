@@ -5,8 +5,8 @@ default['mysql']['server_root_password'] = 'root'
 default['mysql']['port'] = '3306'
 
 # version
-default['mysql']['msi_version'] = '5.7.17.0'
-default['mysql']['mysql_version'] = '5.7.17'
+default['mysql']['msi_version'] = '8.0.13.0'
+default['mysql']['mysql_version'] = '8.0.13'
 default['mysql']['checksum'] = "d4a5dd9b7887d587fc6003025563810dbb6d277b555af615070f68a3a96a29a0"
 default['mysql']['workbench_version'] = '6.3.8'
 
