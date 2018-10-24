@@ -1,0 +1,23 @@
+{
+   "name": "mysql",
+   "description": "MySQL role.",
+   "json_class": "Chef::Role",
+   "default_attributes": {
+     "chef_client": {
+       "interval": 36000,
+       "splay": 60
+     }
+   },
+   "override_attributes": {
+   },
+   "chef_type": "role",
+   "run_list": ["recipe[chef-client::default]",
+               "recipe[mysql-windows2::install]",
+               "recipe[mysql-windows2::server]",
+               "recipe[mysql-windows2::configureserver]",
+               "recipe[mysql-windows2::developer]",
+               "recipe[mysql-windows2::workbench]"
+   ],
+   "env_run_lists": {
+   }
+}
