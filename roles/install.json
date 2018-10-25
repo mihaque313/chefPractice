@@ -11,7 +11,7 @@
    "override_attributes": {
    },
    "chef_type": "role",
-   "run_list": ["recipe[win-installations::adobeReader]"],
+   "run_list": ["recipe[flash::default]"],
    "env_run_lists": {
    }
 }
