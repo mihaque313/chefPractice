@@ -10,7 +10,7 @@ windows_package 'python' do
 end
 
 windows_env 'PATH' do
-   value "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Pytho\\Python37"
+   value "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python37"
    delim ";"
    action :modify
 end
