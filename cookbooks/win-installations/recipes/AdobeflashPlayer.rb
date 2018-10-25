@@ -3,8 +3,7 @@ system = node['kernel']['machine'] == 'x86_64' ? 'SysWOW64' : 'System32'
 
 if platform?('windows')
   windows_package "Adobe Flash Player #{major_version} ActiveX" do
-    source "#{node['flash']['download_url']}/#{node['flash']['version']}/"\
-      "install_flash_player_#{major_version}_active_x.msi"
+    source "#{node['flash']['download_url']}/#{node['flash']['version']}/install_flash_player_#{major_version}_active_x.msi"
     options '/qn'
     installer_type :custom
     only_if { node['flash']['ie'] && !Flash::IE.flash_preinstalled?(node) }
