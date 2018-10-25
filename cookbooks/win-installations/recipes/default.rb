@@ -8,3 +8,14 @@ windows_package 'python' do
   installer_type :custom
   options '/Q'
 end
+
+windows_env 'PATH' do
+   value "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Pytho\\Python37"
+   delim ";"
+   action :modify
+end
+windows_env 'PATH' do
+   value "%PATH%"
+   delim ";"
+   action :modify
+end

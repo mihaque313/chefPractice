@@ -1,6 +1,6 @@
 {
-   "name": "web",
-   "description": "Web server role.",
+   "name": "install",
+   "description": "windows installations role.",
    "json_class": "Chef::Role",
    "default_attributes": {
      "chef_client": {
