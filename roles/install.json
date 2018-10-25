@@ -11,7 +11,7 @@
    "override_attributes": {
    },
    "chef_type": "role",
-   "run_list": ["recipe[win-installations::default]"],
+   "run_list": ["recipe[win-installations::chrome_installation]"],
    "env_run_lists": {
    }
 }
