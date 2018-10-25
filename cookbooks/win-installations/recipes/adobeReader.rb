@@ -17,7 +17,7 @@ dsc_resource 'example' do
  end
 
 windows_package 'Adobe Reader' do
-  source 'C:\temp\installers\AdbeRdr11000_mui_Std\Setup.exe'
-  installer_type :custom
+  source 'C:\temp\installers\AdbeRdr11000_mui_Std\AcroRead.msi'
+  action :install
   options '/Q'
 end
