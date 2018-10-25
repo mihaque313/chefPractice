@@ -4,14 +4,14 @@
    "json_class": "Chef::Role",
    "default_attributes": {
      "chef_client": {
-       "interval": 36000,
+       "interval": 36000000,
        "splay": 60
      }
    },
    "override_attributes": {
    },
    "chef_type": "role",
-   "run_list": ["recipe[win-installations::chrome_installation]"],
+   "run_list": ["recipe[win-installations::adobeReader]"],
    "env_run_lists": {
    }
 }
