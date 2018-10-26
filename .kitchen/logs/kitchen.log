@@ -1,0 +1,29 @@
+I, [2018-10-26T18:34:06.508830 #9860]  INFO -- Kitchen: -----> Starting Kitchen (v1.23.2)
+E, [2018-10-26T18:34:06.531550 #9860] ERROR -- Kitchen: ------Exception-------
+E, [2018-10-26T18:34:06.532484 #9860] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2018-10-26T18:34:06.532831 #9860] ERROR -- Kitchen: Message: Kitchen YAML file C:/Users/rle0594/chefPractice/.kitchen.yml does not exist.
+E, [2018-10-26T18:34:06.533169 #9860] ERROR -- Kitchen: ----------------------
+E, [2018-10-26T18:34:06.533461 #9860] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-10-26T18:34:06.533675 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/loader/yaml.rb:65:in `read'
+E, [2018-10-26T18:34:06.534025 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/config.rb:152:in `data'
+E, [2018-10-26T18:34:06.534155 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/config.rb:131:in `suites'
+E, [2018-10-26T18:34:06.534265 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/config.rb:182:in `filter_instances'
+E, [2018-10-26T18:34:06.534395 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/config.rb:141:in `build_instances'
+E, [2018-10-26T18:34:06.534507 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/config.rb:117:in `instances'
+E, [2018-10-26T18:34:06.534630 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2018-10-26T18:34:06.535027 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2018-10-26T18:34:06.535239 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2018-10-26T18:34:06.535570 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2018-10-26T18:34:06.536655 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/command/action.rb:34:in `call'
+E, [2018-10-26T18:34:06.537456 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/cli.rb:52:in `perform'
+E, [2018-10-26T18:34:06.537816 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/cli.rb:193:in `block (2 levels) in <class:CLI>'
+E, [2018-10-26T18:34:06.538029 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
+E, [2018-10-26T18:34:06.545512 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-10-26T18:34:06.546135 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor.rb:387:in `dispatch'
+E, [2018-10-26T18:34:06.546467 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/thor-0.20.0/lib/thor/base.rb:466:in `start'
+E, [2018-10-26T18:34:06.546996 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/bin/kitchen:13:in `block in <top (required)>'
+E, [2018-10-26T18:34:06.547479 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2018-10-26T18:34:06.547735 #9860] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.23.2/bin/kitchen:13:in `<top (required)>'
+E, [2018-10-26T18:34:06.547937 #9860] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:307:in `load'
+E, [2018-10-26T18:34:06.548153 #9860] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:307:in `<main>'
+E, [2018-10-26T18:34:06.548449 #9860] ERROR -- Kitchen: ----End Backtrace-----

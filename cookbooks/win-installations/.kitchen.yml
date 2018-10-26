@@ -19,7 +19,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[win-installations::default]
+      - recipe[win-installations::ie]
     verifier:
       inspec_tests:
         - test/integration/default

@@ -1,6 +1,6 @@
 ieversion1 = powershell_out('(Get-ItemProperty "HKLM:\\SOFTWARE\\Microsoft\\Internet Explorer" -name svcupdateversion).svcupdateversion').stdout.split('.').first(1)
 puts "#{ieversion1}"
-if ieversion1 -lt 11
+if ieversion1 < 11
   directory 'C:\\Program Files\\Internet-Explorer' do
     #owner 'root'
     #group 'root'
