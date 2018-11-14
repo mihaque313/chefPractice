@@ -12,20 +12,20 @@ version_and_hostindatabag = resolve_version_hostname(cookbook_name, nil)
 odbc_driver_version = version_and_hostindatabag[0]
 hostname_in_databag_or_new_server = version_and_hostindatabag[1]
 begin
-  current_version = powershell_out('(Get-WmiObject -Class Win32_Product | Where-Object -FilterScript {$_.Name -like "*ODBC Driver*"}).version').stdout if node['os'] == 'windows'
+  current_version = powershell_out('(Get-WmiObject -Class Win32_Product | Where-Object -FilterScript {$_.Name -like "*Adobe reader*"}).version').stdout if node['os'] == 'windows'
 rescue
   current_version = ''
 end
 current_version = current_version.chomp
 odbc_driver_version = odbc_driver_version.chomp
-node.default['jnj_mssql_odbc']['odbc_driver_version'] = odbc_driver_version
-node.default['jnj_mssql_odbc']['current_version'] = if current_version != ''
+node.default['jnj_adobe_reader']['adobe_reader_version'] = odbc_driver_version
+node.default['jnj_adobe_reader']['current_version'] = if current_version != ''
                                                       current_version
                                                     else
                                                       '0'
                                                     end
 
-node.default['jnj_mssql_odbc']['sourcepath'] = if node['kernel']['os_info']['os_architecture'] == '64-bit'
+node.default['jnj_adobe_reader']['sourcepath'] = if node['kernel']['os_info']['os_architecture'] == '64-bit'
                                                  "#{node['jnj']['scm_packages']}/odbc/#{odbc_driver_version}/64bit/msodbcsql.msi"
                                                else
                                                  "#{node['jnj']['scm_packages']}/odbc/#{odbc_driver_version}/32bit/msodbcsql.msi"
