@@ -1,0 +1,26 @@
+# The following block is only for test kitchen testing and should be commented out before pushing to Source Control server with #deliver
+
+# ======= Beginning of test kitchen block =======
+# source 'https://supermarket.scm.jnj.com'
+# cookbook "jnj_agents", path: "../jnj_agents"
+# Uncomment to test public supermarket cookbooks
+# source 'https://supermarket.chef.io'
+
+# List path to local functional cookbooks:
+# cookbook 'itx_abc_apache', path: '../../../itx_abc_apache'
+
+# If testing with fixtures uncomment the following and change the run list in the .kitchen.yml to the test cookbook (i.e. itx_abc_apache_test)
+# group :test do
+#  cookbook "itx_abc_apache_test", path: "test/fixtures/itx_abc_apache_test"
+# end
+
+# ======= End of test kitchen block =======
+
+# The following block should be uncommented when pushing to Source Control server with #deliver
+
+# ======= Beginning of ready for delivery block =======
+source :chef_server
+
+# ======= End of ready for delivery block =======
+
+metadata
